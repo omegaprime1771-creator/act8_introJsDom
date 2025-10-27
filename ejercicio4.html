@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio 4: Cambiar Fondo de Secciones</title>
+    <script>
+        function changeBackground() {
+            // se seleccionaran SOLO los elementos con la clase 'color'
+            const elements = document.querySelectorAll('.color');
+            const newColor = 'black';
+            const newTextColor = 'yellow';
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.backgroundColor = newColor;
+                elements[i].style.color = newTextColor;
+            }
+            document.querySelector('#btnBackground').value = "¡Fondo cambiado!";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <a href="index.html">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <h1>Cambiar Fondo de Varias Secciones</h1>
+        </header>
+
+        <input class="btn" id="btnBackground" type="button" value="Aplicar color" onclick="changeBackground();">
+
+        <section class="border">
+            <h2>Contenedor de Apartados</h2>
+            <section class="color">
+                <h2>Sección A</h2>
+                <p>Amo el "akira slide" en peliculas</p>
+            </section>
+            <section class="color">
+                <h2>Sección B</h2>
+                <p>Odio las lentejas</p>
+            </section>
+            <section class="color">
+                <h2>Sección C</h2>
+                <p>Amo DAFT PUNK</p>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <p>Gael Alejandro Garcia Morales</p>
+        <p>LEVN401</p>
+        <p><i>Universidad Técnológica de León</i></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio 1</title>
+    <script>
+        function changeTittle() {
+            document.getElementById('text').innerText = 'Around the world'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <a href="index.html">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <h1>Cambiar el texto de un encabezado</h1>
+        </header>
+        <section id="borde1">
+            <h2 id="text" class="border">Página Principal</h2>
+            <input class="btn" type="button" value="Cambiar título" onclick="changeTittle();">
+        </section>
+    </div>
+    <footer>
+        <p>Gael Alejandro Garcia Morales</p>
+        <p>LEVN401</p>
+        <p><i>Universidad Técnológica de León</i></p>
+    </footer>
+</body>
+
+</html>

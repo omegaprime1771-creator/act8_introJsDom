@@ -1,0 +1,104 @@
+body {
+    text-align: center;
+    background-color: rgb(93, 0, 168);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh; 
+}
+
+.main{
+    flex-grow: 1;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+header a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+}
+
+.bi {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.bi:hover {
+    color: #d09809;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+footer {
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    color: rgb(66, 4, 146);
+    padding: 20px;
+    font-size: 12px;
+}
+
+.border{
+    border: 2px solid #4eee0a;
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* inicio */
+#Tarea {
+    border: 2px solid #63cf5f;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#contenido a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#contenido a:hover {
+    color: rgb(8, 53, 189);
+    transition: 0.3s;
+}
+
+#borde1{
+    padding-top: 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+} 
+
+#hard{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

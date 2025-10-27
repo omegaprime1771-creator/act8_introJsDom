@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Ejercicio 5</title>
+    <script>
+        // almacenén de número de clics
+        let counter = 0;
+        // incrementa el contador y actualiza el texto en el párrafo
+        function incrementCounter() {
+            // aumenta la variable de cuenta en 1
+            counter = counter + 1;
+            const CounterElements = document.getElementById('counter');
+            // actualiza el contenido de texto
+            CounterElements.innerText = counter;
+            // atualiza el texto del botón si la cuenta es 1
+            // comprueba de forma estricta si la variable counter es exactamente igual al número 1
+            if (counter === 1) {
+                document.getElementById('btnClic').value = 'picale broski';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <a href="index.html">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <h1>Contador de Clics con JavaScript</h1>
+        </header>
+        <section class="border">
+            <input class="btn" type="button" id="btnClic" value="pikale" onclick="incrementCounter();">
+            <p>Número de clics realizados:</p>
+            <p id="counter">0</p>
+        </section>
+    </div>
+    <footer>
+        <p>Gael Alejandro Garcia Morales</p>
+        <p>LEVN401</p>
+        <p><i>Universidad Técnológica de León</i></p>
+    </footer>
+</body>
+
+</html>
